@@ -1,9 +1,9 @@
 '''
 Author: souldream
 Date: 2023-03-08 15:38:11
-LastEditTime: 2023-03-08 16:34:35
+LastEditTime: 2023-03-10 20:19:02
 LastEditors: souldream
-Description: 超链接
+Description: 
 可以输入预定的版权声明、个性签名、空行等
 '''
 
@@ -32,6 +32,10 @@ def goods_list():
 @app.route("/user/list")
 def user_list():
     return  render_template("user_list.html")
+
+@app.route("/user/register")
+def user_register():
+    return  render_template("register.html")
 
 if __name__ == '__main__':
     app.run()
