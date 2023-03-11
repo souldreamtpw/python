@@ -20,7 +20,7 @@ from flask import Flask, render_template
 # app = Flask(__name__)
 # 当然这个templates目录也可以自定义名称
 # 例如目录名称为"xxx"
-app = Flask(__name__, template_folder="html")
+app = Flask(__name__, template_folder="temp")
 
 
 # 创建了网址 /show/info 和函数 index 的对应关系

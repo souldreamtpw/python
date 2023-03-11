@@ -1,7 +1,7 @@
 '''
 Author: souldream
 Date: 2023-03-08 15:38:11
-LastEditTime: 2023-03-10 20:19:02
+LastEditTime: 2023-03-11 14:05:41
 LastEditors: souldream
 Description: 
 可以输入预定的版权声明、个性签名、空行等
@@ -15,7 +15,7 @@ Description:
 from flask import Flask, render_template
 
 
-app = Flask(__name__, template_folder="html")
+app = Flask(__name__, template_folder="temp")
 
 @app.route("/show/info")
 def test():
