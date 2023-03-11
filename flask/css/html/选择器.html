@@ -1,0 +1,75 @@
+<!--
+ * @Author: souldream
+ * @Date: 2023-03-11 14:45:52
+ * @LastEditTime: 2023-03-11 15:05:14
+ * @LastEditors: souldream
+ * @Description: 
+ * 可以输入预定的版权声明、个性签名、空行等
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 类选择器 （最多）*/
+        .c1{
+            color:red
+        }
+        /* id选择器 */
+        #c2{
+            color:aqua
+        }
+        /* 标签选择器 */
+        li{
+            color: pink
+        }
+        /* 属性选择器 */
+        input[type='text']{
+            border: 1px solid red;
+        }
+        .v1[xx='123']{
+            color: blue;
+        }
+        /* 后代选择器 */
+        /* 子子孙孙 */
+        .yy li{
+            color: black;
+        }
+        /* 儿子 */
+        .yy > div > a{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">中国</div>
+    <div id="c2">广西</div>
+    <div>上海</div>
+    <ul>
+        <li>北京</li>
+        <li>上海</li>
+        <li>重庆</li>
+    </ul>
+    <input type="text">
+    <input type="password">
+
+    <div class="v1" xx="123">s</div>
+    <div class="v1" xx="456">f</div>
+    <div class="v1" xx="789">g</div>
+
+    <div class="yy">
+        <a href="">百度</a>
+        <div>
+            <a href="">百度</a>
+        </div>
+        <ul>
+            <li>中国</li>
+            <li>日本</li>
+            <li>美国</li>
+        </ul>
+    </div>
+</body>
+</html>
